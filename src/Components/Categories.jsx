@@ -1,17 +1,10 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import { JokeContext } from '../JokeContext';
 
 const Categories = () => {
-  const categories = ['Any', 'Misc', 'Programming', 'Dark', 'Pun', 'Spooky', 'Christmas'];
-  const [selectedCategories, setSelectedCategories] = useState([]);
+  
 
-  const toggleCategory = (category) => {
-    setSelectedCategories((prev) =>
-      prev.includes(category)
-        ? prev.filter((item) => item !== category)
-        : [...prev, category]
-    );
-  };
-
+  const {categories,selectedCategories,setSelectedCategories,toggleCategory} = useContext(JokeContext)
   return (
     <>
       <h1 className="bg-black text-white text-xl md:text-2xl pt-28 text-center font-semibold">

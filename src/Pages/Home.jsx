@@ -3,6 +3,7 @@ import Categories from '../Components/Categories'
 import Language from '../Components/Language'
 
 function Home() {
+  
   return (
     <>
     <Categories/>

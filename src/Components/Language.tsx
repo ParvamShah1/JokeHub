@@ -1,12 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
+import { JokeContext } from '../JokeContext';
 
 const Language = () => {
-  const categoriesList = ['Czech', 'German', 'English', 'Spanish', 'French', 'Portuguese'];
-  const [language,setLaguage] = useState("English");
-  function changeLang(category){
-   setLaguage(category);
-  }
-
+  
+  const {categoriesList,language,setLaguage,changeLang} = useContext(JokeContext)
   return (
     <>
       <h1 className="bg-black text-white text-xl md:text-2xl pt-10 text-center font-semibold">

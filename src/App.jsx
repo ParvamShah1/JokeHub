@@ -3,11 +3,13 @@ import './App.css'
 import Navbar from "../src/Components/Navbar"
 import { BrowserRouter,Route,Routes} from 'react-router-dom'
 import Home from './Pages/Home'
+import JokeProvider from './JokeContext'
 
 function App() {
 
   return (
     <>
+    <JokeProvider>
     <BrowserRouter>
     <Navbar/>
     <Routes>
@@ -15,6 +17,7 @@ function App() {
       
     </Routes>
     </BrowserRouter>
+    </JokeProvider>
  </>
   )
 }
