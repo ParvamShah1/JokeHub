@@ -8,6 +8,8 @@ const Navbar = () => {
       <div className="flex gap-4 sm:gap-6 text-sm sm:text-base">
         <Link to="/savedjokes" className="text-white hover:text-cyan-400">My Saved Jokes</Link>
         <Link to="/jokeoftheday" className="text-white hover:text-cyan-400">Joke of the Day</Link>
+        <Link to="/submitjoke" className="text-white hover:text-cyan-400">Submit your own joke</Link>
+
       </div>
     </div>
   );
