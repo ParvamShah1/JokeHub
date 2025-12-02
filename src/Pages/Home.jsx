@@ -48,7 +48,7 @@ function Home() {
   };
 
   return (
-    <div className="bg-black min-h-screen text-white pt-10">
+    <div className="bg-green-800 min-h-screen text-white pt-10">
       <Categories />
       <Language />
 
